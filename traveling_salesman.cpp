@@ -22,12 +22,12 @@ void TravelingSalesman::solveNN() {
 				double dist = path[i - 1].distance(points[j]);
 
 				// Draw here to show progress!
-				/*drawIncompletePath(); // Current path.
+				drawIncompletePath(); // Current path.
 				drawLine(path[i - 1], points[j], 1, 0, 0); // Proposed location.
 				if (bestLoc > 0) {
 					drawLine(path[i - 1], points[bestLoc], 1, 1, 0.5); // Current best.
 				}
-				render();*/
+				render();
 
 				if (dist < best) {
 					best = dist;
